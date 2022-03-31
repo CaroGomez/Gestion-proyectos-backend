@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1912fa52-21cf-47ca-a4b3-31bbade9cfc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gestionproyectos-frontend" beforeDir="false" afterPath="$PROJECT_DIR$/../gestionproyectos-frontend" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +29,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -114,12 +115,24 @@
       <updated>1648668486943</updated>
       <workItem from="1648668488504" duration="4889000" />
       <workItem from="1648675732330" duration="51000" />
-      <workItem from="1648689261847" duration="35823000" />
+      <workItem from="1648689261847" duration="36236000" />
     </task>
+    <task id="LOCAL-00001" summary="dependencies">
+      <created>1648765600266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648765600266</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
