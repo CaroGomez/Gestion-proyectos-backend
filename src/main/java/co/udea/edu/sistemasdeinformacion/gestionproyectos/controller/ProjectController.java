@@ -27,4 +27,8 @@ public class ProjectController {
         return projectService.getProjects();
     }
 
+    @PutMapping("/project/update")
+    public ResponseEntity<?> updateProject( @RequestBody ProjectModel projectModel) {
+        return projectService.updateProject(projectModel);
+    }
 }

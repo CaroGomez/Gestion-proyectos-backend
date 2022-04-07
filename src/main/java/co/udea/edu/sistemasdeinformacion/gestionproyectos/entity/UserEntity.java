@@ -23,6 +23,6 @@ public class UserEntity {
     @Column(nullable = false)
     private String phone;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     private RoleEntity role;
 }

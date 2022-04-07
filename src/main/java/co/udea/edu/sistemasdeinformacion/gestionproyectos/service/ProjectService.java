@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProjectService {
@@ -29,6 +30,18 @@ public class ProjectService {
             return new ResponseEntity("Error en la base de datos", HttpStatus.INTERNAL_SERVER_ERROR);
         }
         return new ResponseEntity("Registrado", HttpStatus.OK);
+    }
+
+    public ResponseEntity<?> updateProject(ProjectModel projectModel){
+        Optional<ProjectEntity> projectEntity = projectRepositoryJPA.findById(projectModel.getId());
+        if (!projectEntity.isEmpty()) {
+            ProjectEntity projectEntityUpdated = mapper.map(projectModel, ProjectEntity.class);
+            projectRepositoryJPA.save(projectEntityUpdated);
+
+            return new ResponseEntity("Actualización Exitosa", HttpStatus.OK);
+        }
+
+        return new ResponseEntity("No se pudo actualizar", HttpStatus.OK);
     }
 
     public List<ProjectEntity> getProjects() {
