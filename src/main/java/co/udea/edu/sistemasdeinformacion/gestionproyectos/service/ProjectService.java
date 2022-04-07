@@ -11,6 +11,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProjectService {
     @Autowired
@@ -27,5 +29,9 @@ public class ProjectService {
             return new ResponseEntity("Error en la base de datos", HttpStatus.INTERNAL_SERVER_ERROR);
         }
         return new ResponseEntity("Registrado", HttpStatus.OK);
+    }
+
+    public List<ProjectEntity> getProjects() {
+        return projectRepositoryJPA.findAll();
     }
 }
